@@ -1,0 +1,22 @@
+body {
+    background-image: url("../../../img/wp.png");
+    background-attachment: scroll;
+    background-repeat: repeat;
+}
+
+li {
+    font-size: 2rem;
+}
+
+h1 {
+    color: #0F0A0A;
+}
+
+a {
+    font-size: 1.5rem;
+    color: #0F0A0A;
+}
+
+a:hover {
+    color: #dc3545;
+}
