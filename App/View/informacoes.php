@@ -41,7 +41,7 @@ if ($_POST) {
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center">Escreva um pouco sobre você</h1>
+                    <h1 class="text-center font-weight-bold mx-auto display-4 font-weight-light">Escreva um pouco sobre você</h1>
                 </div>
             </div>
 

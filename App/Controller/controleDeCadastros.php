@@ -3,8 +3,6 @@ declare (strict_types = 1);
 
 namespace App\Controller;
 
-require '../../vendor/autoload.php';
-
 use App\Model\DAO\pessoaDAO;
 use App\Model\Validation\validacao;
 use App\Model\Entity\pessoa;

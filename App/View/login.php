@@ -42,7 +42,7 @@ if ($_POST) {
         <div class="container-fluid bg-transparent">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <h1 class="text-center font-weight-bold mx-auto display-1 font-weight-light">Login</h1>
+                    <h1 class="text-center font-weight-bold mx-auto display-4 font-weight-light">Login</h1>
                 </div>
             </div>
 

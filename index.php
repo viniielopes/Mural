@@ -73,23 +73,21 @@ $quantidadePorColuna = ceil($quantidadePorColuna);
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <!-- Jumbotron -->
-                <div class="jumbotron p-2 bg-transparent">
-                    <h1 class="text-center font-weight-bold mx-auto display-1 font-weight-light">Mural</h1>
+                <div class="jumbotron p-2 bg-transparent border border-dark h-100">
+                    <h1 class="text-center font-weight-bold mx-auto display-4 font-weight-light">Mural</h1>
 
                     <!-- Card Deck -->
                     <div class="card-deck">
-                        <div class="col-12 col-sm-6  col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                             <ul class="list-group text-center">
                                 <?php
                                 //separa a quantidade por igual em cada coluna do mural
                                 for ($i = 0; $i < $quantidadePorColuna; $i++) { ?>
-
-                                    <a href="#" class="list-group-item bg-transparent font-italic border-0">
+                                    <a href="App/View/pessoa.php?id=<?php echo $listaNomes[$i]['id']; ?>" class="list-group-item bg-transparent font-italic border-0">
                                         <?php echo $listaNomes[$i]['nome']; ?>
                                     </a>
                                     <?php 
                                 } ?>
-
                             </ul>
                         </div>
                         
@@ -101,17 +99,13 @@ $quantidadePorColuna = ceil($quantidadePorColuna);
                                 for ($i = 0; $i < $quantidadePorColuna; $i++) {
                                     if (!empty($listaNomes[$i + $quantidadePorColuna])) {
                                         ?>
-
-                                    <a href="#" class="list-group-item bg-transparent font-italic border-0">
-
+                                    <a href="App/View/pessoa.php?id=<?php echo $listaNomes[$i + $quantidadePorColuna]['id']; ?>" class="list-group-item bg-transparent font-italic border-0">
                                         <?php 
                                         echo $listaNomes[$i + $quantidadePorColuna]['nome']; ?>
-
                                     </a>
                                     <?php 
                                 }
                             } ?>
-
                             </ul>
                         </div>
 
@@ -123,8 +117,7 @@ $quantidadePorColuna = ceil($quantidadePorColuna);
                                 for ($i = 0; $i < $quantidadePorColuna; $i++) {
                                     if (!empty($listaNomes[$i + $quantidadePorColuna + $quantidadePorColuna])) {
                                         ?>
-
-                                    <a href="#" class="list-group-item bg-transparent font-italic border-0">
+                                    <a href="App/View/pessoa.php?id=<?php echo $listaNomes[$i + $quantidadePorColuna + $quantidadePorColuna]['id']; ?>" class="list-group-item bg-transparent font-italic border-0">
                                         <?php 
                                         echo $listaNomes[$i + $quantidadePorColuna + $quantidadePorColuna]['nome']; ?>
                                     </a>

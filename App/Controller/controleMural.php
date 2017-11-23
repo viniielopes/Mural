@@ -3,8 +3,6 @@ declare (strict_types = 1);
 
 namespace App\Controller;
 
-require 'vendor/autoload.php';
-
 use App\Model\DAO\muralDAO;
 
 class controleMural
@@ -13,6 +11,14 @@ class controleMural
     {
         $muralDAO = new muralDAO();
         $listaNomes = $muralDAO->buscarTodosNomes();
+
+        return $listaNomes;
+    }
+
+    public function informacoesPessoa(string $id) : array
+    {
+        $muralDAO = new muralDAO();
+        $listaNomes = $muralDAO->buscarTodasInformacoes($id);
 
         return $listaNomes;
     }
