@@ -6,7 +6,7 @@ class BD
 
     function conectar() : \PDO
     {
-        $conexao = new \PDO("mysql:host=127.0.0.1;dbname=crud", "vinicius", "rosangela123");
+        $conexao = new \PDO("mysql:host=127.0.0.1;dbname=crud", "root", "root");
         return $conexao;
     }
     function desconectar()
